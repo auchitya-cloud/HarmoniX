@@ -1,0 +1,263 @@
+.dash-container{
+    display:flex;
+    flex:1;
+
+}
+.navleft-container{
+    height:100vh;
+    width:30vh;
+    background-color: rgb(36, 36, 36);
+    border:2px solid rgb(204, 227, 219);
+    
+}
+.brand-container{
+    background-color: rgb(68, 73, 83);
+    margin-top:10vh;
+    margin-left:2vh;
+    margin-right: 2vh;
+    padding:1px;  
+    height:100px;
+    text-align: center;
+    border-radius: 10%;
+    
+}
+.prof_brand_name{
+        margin-top: 17px;
+        color:rgb(100, 199, 166); 
+        font-weight: 1000;
+        font-size: 35px;
+        
+        
+    }
+.prof_dash_name{
+    margin-top: 35px;
+    color:rgb(100, 199, 166); 
+    font-weight: 1000;
+    font-size: 25px;}
+    
+
+
+.Plist{
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 10px;
+    color:aliceblue;
+    text-decoration: none;
+    cursor:pointer;
+
+}
+.Plist1
+{
+   
+  text-decoration: none !important;
+  cursor: pointer;
+  color: rgb(252, 252, 252);
+}
+.Plist1:hover{
+  color: rgb(100, 199, 166); 
+}
+.dropdown-toggle2{
+   
+  text-decoration: none !important;
+  cursor: pointer;
+  color: rgb(252, 252, 252);
+}
+    
+.dropdown-toggle2:hover{
+    color: rgb(100, 199, 166); 
+  
+}
+.prof-container{
+    position: fixed; 
+    top: 0; 
+    right: 0;
+    
+}
+.prof_pic{
+    width:40px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor:pointer;}
+   
+.prof_pic:hover{
+    border:2px solid rgb(100, 199, 166); 
+}
+.noti_pic:hover{
+    border:2px solid rgb(100, 199, 166); 
+}
+.prof_pic:hover{
+    border:2px solid rgb(100, 199, 166); 
+}
+
+.noti_pic{
+    width:40px;
+    border-radius: 55%;
+    margin-right: 10px;
+    cursor:pointer;
+}
+.settings{
+    width:40px;
+    border-radius: 55%;
+    margin-right: 5px;
+    cursor:pointer;
+
+}
+.weltxt-container{
+    
+    color:rgb(11, 11, 11);
+    font-weight: 900;
+    font-size: 60px;
+    margin-top: 50px;
+    padding:50px;    
+    border-radius:10px;    
+}
+.navright-container{
+    flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.dropdown-toggle3{
+   
+    text-decoration: none !important;
+    cursor: pointer;
+    color: rgb(252, 252, 252);
+    width:40px;
+    border-radius: 55%;
+  }
+      
+  .dropdown-toggle3:hover{
+      border:1px solid rgb(100, 199, 166); 
+    
+  }
+
+  .Metronome-container{
+    margin-top: 150px;
+    display:flex;
+    
+    
+    
+
+  }
+  .metronome{
+    background-color: rgb(218, 179, 179);
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width:300px;
+    padding:30px;
+    width:500px;
+    height:500px;
+    border-radius: 10%;
+    border: 2px solid black;
+  }
+  .bpm-display{
+    width:100%;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+
+  }
+  .tempo{
+    font-size: 50px;
+    
+  }
+  .temposettings{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+  }
+  .increasetempo{
+    width:70px;
+    height:35px;
+    border-radius: 50%;
+    border:2px solid red;
+    text-align: center;
+    cursor:pointer;
+    font-size: 40px;
+    line-height: 22px;
+    background-color: rgb(252, 252, 252);
+  }
+  .increasetempo:hover{
+    background-color: red;
+  }
+.decreasetempo{
+    width:70px;
+    height:35px;
+    border-radius: 50%;
+    border:2px solid red;
+    text-align: center;
+    cursor:pointer;
+    font-size: 30px;
+    line-height: 25px;
+    margin-left: 10px;
+    background-color:rgb(252, 252, 252);
+
+}
+.decreasetempo:hover{
+    background-color: red;
+}
+.startstop{
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    width:100px;
+    height:100px;
+    margin-left: 160px;
+    color:red;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    text-align: center;
+    line-height: 90px;
+    cursor:pointer;
+}
+.startstop:hover{
+    border:4px solid white;
+}
+.timesig{
+    display: flex;
+    font-size: 30px;
+    
+    margin-left: 150px;
+}
+.subtimesig{
+    margin-right: 20px;
+    margin-top: 5px;
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    border:2px solid red;
+    text-align: center;
+    cursor:pointer;
+    font-size: 30px;
+    line-height: 25px;
+    
+    background-color:rgb(252, 252, 252);
+}
+.subtimesig:hover{
+    background-color:red;
+}
+.addtimesig{
+    
+    margin-top: 5px;
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    border:2px solid red;
+    text-align: center;
+    cursor:pointer;
+    font-size: 30px;
+    line-height: 25px;
+    margin-left: 20px;
+    background-color:rgb(252, 252, 252);
+
+}
+.addtimesig:hover{
+    background-color:red;
+}
+.timesigtxt{
+    margin-left: 150px;
+    font-weight: bold;
+}

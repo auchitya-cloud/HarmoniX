@@ -1,0 +1,201 @@
+.homebutton-container{
+    margin-top: 20px;
+    margin-left:20px;
+   
+
+}
+.Lhomelink{
+    
+    font-size: 20px;
+    font-weight: 400;
+    font-stretch: expanded;
+    text-decoration: none;
+    color:rgb(32, 146, 115);
+
+}
+.Lhomelink:hover{
+    text-decoration: none;
+    color:rgb(80, 214, 178);
+
+}
+
+
+.heading1{
+    display:flex;
+    flex:1;
+    text-align: center;
+    margin-top: 100px;
+    margin-left:250px;
+}
+.heading2{
+    display:flex;
+    flex:1;
+    align-content: center;
+    margin-left:240px;
+    margin-top: 100px;
+    max-width: 70%;
+}
+.gentxt1{
+    
+    font-weight: 1200px;
+    font-size: 100px;
+    font-weight: bold;
+    font-size: 80px;
+    color:rgb(213, 227, 243);
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 5px;
+    background-image: linear-gradient(90deg, rgb(40, 46, 42), rgb(32, 146, 115));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;  
+
+}
+.gentxt2{
+    color:black;
+    font-weight: 1200px;
+    font-size: 60px;
+    background-image: linear-gradient(90deg, rgb(40, 46, 42), rgb(32, 146, 115));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+    text-align: center;
+}
+.musicianiconl{
+    margin-top: 37px;
+    display:flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    max-width:70px;
+    height:70px;
+    margin-right: 20px;
+}
+.musicianiconr{
+    margin-top: 37px;
+    display:flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    max-width:70px;
+    height:70px;
+    margin-left: 20px;
+}
+.line{
+    border: 1px solid #f1eded; 
+    margin-top: 80px;
+    width:700px;
+}
+.desc{
+    margin-top: 100px;
+    margin-left: 340px;
+    margin-right: 270px; 
+    border:2px solid rgb(6, 90, 6);
+    border-radius: 10%;
+
+}
+.gentxt3{
+    color:rgb(250, 250, 250);
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 60px;
+    
+
+}
+.big-input-box{
+    width:40%;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: grey;
+    color:black;
+
+}
+.big-input-box::placeholder{
+    color:black;
+}
+.slider-container{
+    display:flex;
+    flex:1;  
+    margin-left: 30px;
+    
+
+    
+   
+}
+.slider{
+    color:rgb(255, 255, 255);
+    width:700px;
+    margin-left: 10px;
+        
+    
+}
+.adjusttime{
+    margin-top: 15px;
+   margin-right: 20px;
+   margin-left: 250px;
+   color:white;
+
+}
+  .svalue{
+    color:white;
+    width:50px;
+    margin-right: 600px;
+    margin-left: 30px;
+    margin-top: 15px;
+    
+    
+  }
+  .txtdesc-container{
+    
+    display:flex;
+    flex:1;
+    margin-right: 100px;
+    margin-left: 30px;
+    margin-top: 30px;
+    width:100%;
+    
+  }
+  .Ddisc-container{
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+  }
+  .descbut{
+    color:rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 170px;
+    background-color:rgb(58, 144, 121); 
+    padding:10px;
+    border-radius: 10%;  
+  }
+  .descbut:hover{
+    background-color:rgb(53, 217, 173);  
+
+  }
+  .subDdisc-container{
+    margin-top: 50px;
+    color:white;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .Player{
+    display:flex;
+    flex:1;
+    margin-top: 20px;
+    margin-bottom: 50px;   
+    border-radius: 10%; 
+    padding-left:100px; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    margin-left: 600px;
+    margin-right: 530px;
+   
+    border-radius: 10%;
+    
+  }
+
+
+ 
+  
+  

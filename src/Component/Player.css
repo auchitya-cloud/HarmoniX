@@ -1,0 +1,17 @@
+.player-container{
+    padding:40px;
+    margin-left: 600px;
+    margin-top: 100px;
+    background-color: rgb(136, 136, 136);
+    margin-right: 540px;
+    border-radius: 10%;
+    border:3px solid green;
+}
+#arimg{
+    width:300px;
+
+
+}
+#songinfo{
+    color:white;    
+}

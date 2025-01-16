@@ -1,0 +1,68 @@
+.searchsongs-container{
+    
+    
+    height:100%;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    
+   
+}
+#song{
+    color:aliceblue;
+    margin-left: 60px;
+    margin-top:20px;
+    margin-right: 60px;
+}
+.serchertxt-container{
+    background-color: black;
+    display:flex;
+    flex:1;
+
+}
+#hButt{
+    margin-top:30px;
+   
+    text-decoration: none;
+    color:rgb(73, 170, 146); ;
+}
+#hButt:hover{
+    
+    color:rgb(53, 217, 173); 
+}
+.songinput-container{
+    margin-top: 10px;
+    margin-left: 60px; 
+}
+#songinput{
+    width:90%;
+    height:40px;
+    border-radius:4%;
+    
+   
+}
+
+#songbut{
+    color: white;
+    background-color:rgb(73, 170, 146); ;
+    border-radius: 10%;
+    height:40px;
+    margin-left:10px;
+}
+#songbut:hover{
+    background-color: rgb(53, 217, 173); 
+}
+.songs-container{
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 0px;
+}
+.card{       
+    padding:20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    height:50vh;
+}
+
+
+

@@ -1,0 +1,24 @@
+.chartM-container {
+    padding-left: 50px;
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+}
+.butG-container{
+    padding:20px;
+    padding-left: 100px;
+    padding-top: 0px;
+}
+.butG{
+    background-color:rgb(100, 199, 166); 
+    padding:10px;
+    margin-left: 10px;
+    border-radius: 10%;
+
+}
+.chart-container {
+    padding-left: 50px;
+    background-color: rgb(243, 243, 243);
+    padding: 80px;
+    width: 70%;
+}   
+

@@ -1,0 +1,121 @@
+.main-container{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./images/background.jpg');
+    color:#090909;
+    display:flex;
+    flex:1;
+    display:flex;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.submain-container{
+   
+   margin-left: 200px;
+    background: #c5dcde;
+    padding:40px;
+    width:40%;
+    height:60%;
+    border-radius: 10%;
+    box-shadow:solid white;
+    
+
+    
+}
+.brand1{
+    font-size: 100px;
+    padding-left: 50px;
+    color: rgb(100, 199, 166); 
+    font-weight: 1000;
+}
+
+.margin-container{
+    margin-left: 50px;
+}
+.img1{
+    position:relative;
+    width:50px;
+    padding:10px;
+    margin-bottom: 10px;
+}
+.img2{
+    width:50px;
+    padding:10px;
+    margin-bottom: 10px;
+}
+.img3{
+    width:50px;
+    padding:10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+
+.inpuser{
+    margin-left: 40px;
+    outline: 1px solid rgb(24, 24, 24);
+    
+
+}
+.inpemail{
+    margin-left: 83px;
+    outline: 1px solid rgb(24, 24, 24);
+}
+.inpuser::placeholder{
+    font-size: 15px;
+    padding-left: 6px;
+}
+.inpemail::placeholder{
+    font-size: 15px;
+    padding-left: 6px;
+}
+.inppassword{
+    
+    margin-left: 43px;
+    outline: 1px solid rgb(58, 66, 113);
+}
+.inppassword::placeholder{
+    padding-left: 6px;
+    font-size: 15px;
+}
+.loginbtn{
+    background-color: rgb(15, 74, 55);
+    color: #f9f8f8;
+    padding:6px;  
+    border: none; 
+    border-radius: 1px;
+    cursor: pointer; 
+    outline: none;
+    width:100px;
+    border-radius: 10%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.registerbtn{
+    background-color: rgb(15, 74, 55);
+    color: #f9f8f8;
+    padding:6px;  
+    border: none; 
+    border-radius: 1px;
+    cursor: pointer; 
+    outline:none;
+    width:100px;
+    border-radius: 10%;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.registerbtn:hover{
+    background-color:rgb(24, 157, 112); 
+}
+.loginbtn:hover{
+    background-color:rgb(24, 157, 112); 
+}
+

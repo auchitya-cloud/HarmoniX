@@ -1,35 +1,70 @@
-# HarmoniX
-HarmoniX is a comprehensive music platform that empowers you to create, learn, and experience music in innovative ways. Combining the power of AI, intuitive tools, and seamless integration with music services, HarmoniX is designed for music lovers, learners, and creators alike.
-Whether you're composing original pieces, improving your musical skills, or simply exploring your favorite tracks, HarmoniX brings everything you need into one harmonious app.
+# Getting Started with App
 
-Key Features:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-1. AI Music Generation:
+## Available Scripts
 
-Generate original music effortlessly with the power of MusicGen AI.
-Input text prompts or melodies to create personalized tracks in any style or mood.
+In the project directory, you can run:
 
-2. Music Library and Player:
+### `npm start`
 
-Integrate with Spotify and manage your personal music library.
-Organize playlists, search for songs, and enjoy a sleek music player experience.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-3. Music Learner:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Improve your performance with real-time feedback on pitch, timing, and accuracy using the Aubio library.
-Visualize and compare your notes with ideal melodies through intuitive graphs and charts.
+### `npm test`
 
-4. Tuner:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Precisely tune your instrument with real-time pitch detection and visual feedback.
-Supports a wide range of instruments, ensuring you're always in tune.
+### `npm run build`
 
-5. Metronome:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Practice with perfect rhythm using a customizable metronome.
-Adjust tempos and time signatures with both visual and auditory beat options.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-6. Interactive Sheet Music:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Render and interact with sheet music dynamically using VexFlow.
-Ideal for both practice and visualization, making learning engaging and effective.
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

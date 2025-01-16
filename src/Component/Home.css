@@ -1,0 +1,293 @@
+body{
+    background-color: rgb(24, 24, 24);
+    margin:0px;
+}
+.Brand{
+    color:rgb(23, 30, 23);
+  
+}
+.logo{
+    width:80px;
+    border-radius: 40%;
+    margin-left: 20px;
+}
+
+.collapse{
+    margin-left: 100px;
+}
+.customnav{
+    display: flex;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    border-bottom: 2px solid rgb(46, 224, 165);
+    z-index: 1000;  
+    padding:20px;
+    background-color: rgb(18, 17, 17);    
+    display:flex;
+    flex:1;
+    align-items: center;
+}
+.brand{
+    margin-left: 30px;
+    color:rgb(46, 224, 165)
+}
+.dashboard{
+    text-decoration:none !important;
+    color: white;
+    margin-left: 50px;
+    border-right: 0.1px solid rgb(46, 224, 165);
+    padding-right: 10px;
+}
+.login{
+    text-decoration:none !important;
+    color: white;
+    margin-left:350px;
+}
+.login:hover{
+   
+    color:rgb(46, 224, 165)
+}
+.dashboard:hover{
+    color:rgb(46, 224, 165)
+}
+.tools{
+    text-decoration:none !important;
+    color: white;
+    margin-left: 20px;
+    border-right: 0.5px solid rgb(46, 224, 165);
+    padding-right: 10px;
+    cursor:pointer;
+
+}
+.tools:hover{
+    color:rgb(46, 224, 165)
+}
+.Songs{
+    text-decoration:none !important;
+    color: white;
+    margin-left: 20px;
+    border-right: 0.5px solid rgb(46, 224, 165);
+    padding-right: 10px;
+
+}
+.Songs:hover{
+    color:rgb(46, 224, 165)
+}
+.MusicGenerator{
+    text-decoration:none !important;
+    color: white;
+    margin-left: 20px;
+    border-right: 0.5px solid rgb(46, 224, 165);
+    padding-right: 10px;
+
+}
+.MusicGenerator:hover{
+    color:rgb(46, 224, 165)
+}
+.MusicLearner{
+    text-decoration:none !important ;
+    color: white;
+    margin-left: 20px;
+    border-right: 0.5px solid rgb(46, 224, 165);
+    padding-right: 10px;
+}
+.MusicLearner:hover{
+    color:rgb(46, 224, 165)
+}
+
+.searchbox{
+    display: block;
+    width: 100 ;
+    padding: 6px 12px;
+    font-size: 15px;
+    line-height: 22px;
+    border-radius: 4px;
+    margin-left: 200px;
+}
+.button{
+    background-color: #333333;
+    color: #fff;
+    padding:6px;  
+    border: none; 
+    border-radius: 1px;
+    cursor: pointer; 
+    outline: none; 
+    margin-left: 3px;
+}
+.button:hover{
+    background-color:rgb(13, 137, 96);
+}
+.welcome-container{
+    margin-top:100px ;   
+    padding:80px;
+    color:aliceblue
+    
+}
+.captions{
+    margin-left: 80px;
+    margin-right: 80px;
+    font-weight: bold;
+    font-size: 80px;
+    color:rgb(213, 227, 243);
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 5px;
+    background-image: linear-gradient(90deg, rgb(40, 46, 42), rgb(32, 146, 115));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;   
+}
+.captions2{
+    
+    font-weight: bold;
+    font-size: 30px;
+    color:rgb(213, 227, 243);
+    text-align: center;
+    margin-top: 40px;
+    padding:30px;
+    background-image: linear-gradient(270deg, rgb(40, 46, 42), rgb(32, 146, 115));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+} 
+
+.captions3{
+        margin-left: 80px;
+        margin-right: 80px;
+        font-weight: bold;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 50px;
+        color:rgb(213, 227, 243);
+        text-align: center;
+        padding:30px;    
+    }
+
+.container{
+        
+        padding:80px;
+        display:flex;
+        flex:1;      
+    }
+.guitarlogo{
+        width:80%;
+        display:flex;
+        flex:1;
+        border-radius: 10px;
+        transition: box-shadow 0.3s ease-in-out;
+        margin-left: 80px;
+    }
+    .guitarlogo:hover{
+        box-shadow: 0 0 10px 5px rgb(46, 224, 165)
+    }
+    .GenMusiclogo{  
+        margin-left: 150px;
+        width:80%;
+        display:flex;
+        flex:1;
+        border-radius: 40px;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    .GenMusiclogo:hover{
+        box-shadow: 0 0 10px 5px rgb(46, 224, 165)
+    }
+    .one-container{
+        margin-left: 30vh;
+        padding:80px;
+        display:flex;
+        flex:1;
+        width:109vh;
+        
+    }
+    .row-container{
+        border-top: 2px solid rgb(46, 224, 165);
+        align-items: center;
+        align-tracks: center;
+        padding:60px;
+        display:flex;
+        flex:1;
+        background-color: rgb(62, 73, 77);
+        color:white;
+    }
+    .btimgs1{
+        margin-left: 280px;
+        padding:15px;
+        width:30vh;
+        border-radius: 50px;
+    }
+    .btimgs2{
+        margin-left: 70px;
+        padding:15px;
+        width:28vh;
+        border-radius: 50px;
+    }
+    .btimgs3{
+        border-radius: 50px;
+        padding:15px;
+        width:30vh;
+        height:28vh;
+        margin-left: 70px;
+    }
+    .txt1{
+        margin-left: 370px;
+    }
+    .txt2{
+        
+        margin-left: 60px;  
+        
+    }
+
+    .txt3{
+        margin-left: 100px;
+    }
+    .about-container{
+        padding:50px;
+    }
+    .dropdown{
+    
+    position: absolute;
+    top: 100%; /* Adjust as needed */
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left:370px ;
+    width:150px;
+    padding: 10px;
+    text-align: center;
+    color:white;
+    background-color: #333333;
+}
+.p1{
+    color:white;
+    background-color: #333333;
+    cursor:pointer;
+    width:100%;
+}
+.p2{
+    color:white;
+    background-color: #333333;
+    cursor:pointer;
+}
+.p1:hover{
+    background-color:rgb(46, 224, 165);
+}
+.p2:hover{
+    background-color:rgb(46, 224, 165);
+}
+.dropdown-toggle{
+    text-decoration:none ;
+    color: white;
+    margin-left: 20px;
+    border-right: 1px solid rgb(46, 224, 165);
+    padding-right: 10px;
+    cursor: pointer;
+
+}
+.dropdown-toggle:hover{
+    color:rgb(46, 224, 165);
+
+}
+
+
+

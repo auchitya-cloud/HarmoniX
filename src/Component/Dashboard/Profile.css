@@ -1,0 +1,140 @@
+.dash-container{
+    display:flex;
+    flex:1;
+
+}
+.navleft-container{
+    height:120vh;
+    width:30vh;
+    background-color: rgb(36, 36, 36);
+    border:2px solid rgb(204, 227, 219);
+    
+}
+.brand-container{
+    background-color: rgb(68, 73, 83);
+    margin-top:10vh;
+    margin-left:2vh;
+    margin-right: 2vh;
+    padding:1px;  
+    height:100px;
+    text-align: center;
+    border-radius: 10%;
+    
+}
+.prof_brand_name{
+        margin-top: 17px;
+        color:rgb(100, 199, 166); 
+        font-weight: 1000;
+        font-size: 35px;
+        
+    }
+.prof_dash_name{
+    margin-top: 35px;
+    color:rgb(100, 199, 166); 
+    font-weight: 1000;
+    font-size: 25px;}
+    
+
+
+.Plist{
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 10px;
+    color:aliceblue;
+    text-decoration: none;
+    cursor:pointer;
+
+}
+.Plist1
+{
+   
+  text-decoration: none !important;
+  cursor: pointer;
+  color: rgb(252, 252, 252);
+}
+.Plist1:hover{
+  color: rgb(100, 199, 166); 
+}
+.dropdown-toggle2{
+   
+  text-decoration: none !important;
+  cursor: pointer;
+  color: rgb(232, 232, 232);
+}
+    
+.dropdown-toggle2:hover{
+    color: rgb(100, 199, 166); 
+  
+}
+.navright-container{
+    background-color: rgb(229, 229, 229);
+}
+.prof-container{
+    position: fixed; 
+    top: 0; 
+    right: 0;
+    padding: 10px;
+}
+
+.ulstyle{
+    margin-left: 40px;
+}
+.prof_pic{
+    width:40px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor:pointer;
+    
+}
+.noti_pic{
+    width:40px;
+    border-radius: 55%;
+    margin-right: 10px;
+    cursor:pointer;
+}
+.settings{
+    width:40px;
+    border-radius: 55%;
+    margin-right: 5px;
+    cursor:pointer;
+
+}
+.words{
+    color:aliceblue;
+}
+.profile-container {
+    
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-right: 110px;
+    margin-top: 110px;
+  }
+  
+  .profile-pic {
+    display:flex;
+    flex:1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-right: 400px;
+    margin-top:50px;
+  }
+  .dropdown-toggle3{
+   
+    text-decoration: none !important;
+    cursor: pointer;
+    color: rgb(252, 252, 252);
+    width:40px;
+    border-radius: 55%;
+  }
+      
+  .dropdown-toggle3:hover{
+      color: rgb(100, 199, 166); 
+    
+  }
+  .profile-info{
+    margin-left: 40px;
+  }
