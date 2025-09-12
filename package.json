@@ -2,7 +2,7 @@
     "name": "harmonix-music-ai",
     "version": "1.0.0",
     "description": "AI-powered music creation and learning app with Spotify integration",
-    "homepage": "https://auchitya.github.io/HarmoniX",
+
     "main": "src/index.js",
     "scripts": {
         "start": "react-scripts start",

@@ -52,12 +52,12 @@ const features = [{
 
 const stats = [{
         icon: < AutoAwesome / > ,
-        value: '10K+',
+        value: '100+',
         label: 'Tracks Generated'
     },
     {
         icon: < Headphones / > ,
-        value: '5K+',
+        value: '50+',
         label: 'Active Users'
     },
     {
