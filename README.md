@@ -159,10 +159,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 - 📧 Email: support@harmonix.com
-- 💬 Discord: [Join our community](https://discord.gg/harmonix)
-- 🐛 Issues: [GitHub Issues](https://github.com/your-username/HarmoniX/issues)
+- 🐛 Issues: [GitHub Issues](https://github.com/auchitya-cloud/HarmoniX/issues)
 
-## 🔮 Roadmap
+## Roadmap
 
 - [ ] Advanced AI music models
 - [ ] Collaborative playlists
@@ -173,6 +172,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ by the HarmoniX Team**
+**Made with ❤️ by the HarmoniX Team (Auchitya, Kunal and Raymond)**
 
 *Bringing AI and music together for the next generation of creators.*
