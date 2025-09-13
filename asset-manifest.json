@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/HarmoniX/static/js/main.c2ee3c3e.js",
-    "index.html": "/HarmoniX/index.html",
-    "main.c2ee3c3e.js.map": "/HarmoniX/static/js/main.c2ee3c3e.js.map"
+    "main.js": "/static/js/main.60ee6c90.js",
+    "index.html": "/index.html",
+    "main.60ee6c90.js.map": "/static/js/main.60ee6c90.js.map"
   },
   "entrypoints": [
-    "static/js/main.c2ee3c3e.js"
+    "static/js/main.60ee6c90.js"
   ]
 }
