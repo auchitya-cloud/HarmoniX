@@ -1,0 +1,29 @@
+{
+    "version": 2,
+    "name": "harmonix-music-ai",
+    "builds": [{
+            "src": "package.json",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "build"
+            }
+        },
+        {
+            "src": "api/generate.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [{
+            "src": "/api/generate",
+            "dest": "/api/generate.py"
+        },
+        {
+            "src": "/api/(.*)",
+            "dest": "/api/generate.py"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        }
+    ]
+}

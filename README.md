@@ -4,6 +4,27 @@ A beautiful, modern music AI platform that combines artificial intelligence with
 
 ![HarmoniX Demo](https://img.shields.io/badge/Status-Live-brightgreen) ![React](https://img.shields.io/badge/React-18.0-blue) ![Material-UI](https://img.shields.io/badge/Material--UI-5.0-purple) ![Firebase](https://img.shields.io/badge/Firebase-Ready-orange)
 
+## 📱 Screenshots
+
+### Home Dashboard
+<img width="1440" height="780" alt="Screenshot 2025-09-13 at 04 11 13" src="https://github.com/user-attachments/assets/ac17e422-112c-4882-bc6d-8660c8b87a89" />
+
+Beautiful landing page with music statistics and quick access to all features.
+
+### AI Music Generator
+<img width="1440" height="776" alt="Screenshot 2025-09-13 at 04 13 06" src="https://github.com/user-attachments/assets/c5decfd6-df5f-4ff4-b347-6f319b29ceca" />
+
+Intuitive interface for creating AI-generated music with genre and mood controls.
+
+### Learning Tools
+<img width="1440" height="778" alt="Screenshot 2025-09-13 at 04 13 23" src="https://github.com/user-attachments/assets/8df07747-badb-4476-8e05-52ea0a0382ed" />
+
+Professional metronome and guitar tuner with real-time feedback.
+
+### Authentication
+Clean, modern login and signup pages with glassmorphism design.
+
+
 ## ✨ Features
 
 ### 🎼 AI Music Generation
@@ -45,20 +66,6 @@ A beautiful, modern music AI platform that combines artificial intelligence with
 - **Styling**: Material-UI with custom themes
 - **Deployment**: GitHub Pages
 - **AI Backend**: Python with ML models
-
-## 📱 Screenshots
-
-### Home Dashboard
-Beautiful landing page with music statistics and quick access to all features.
-
-### AI Music Generator
-Intuitive interface for creating AI-generated music with genre and mood controls.
-
-### Learning Tools
-Professional metronome and guitar tuner with real-time feedback.
-
-### Authentication
-Clean, modern login and signup pages with glassmorphism design.
 
 ## 🎯 Getting Started
 
@@ -159,10 +166,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 - 📧 Email: support@harmonix.com
-- 💬 Discord: [Join our community](https://discord.gg/harmonix)
-- 🐛 Issues: [GitHub Issues](https://github.com/your-username/HarmoniX/issues)
+- 🐛 Issues: [GitHub Issues](https://github.com/auchitya-cloud/HarmoniX/issues)
 
-## 🔮 Roadmap
+## Roadmap
 
 - [ ] Advanced AI music models
 - [ ] Collaborative playlists
@@ -173,6 +179,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ by the HarmoniX Team**
+**Made with ❤️ by the HarmoniX Team (Auchitya, Kunal and Raymond)**
 
 *Bringing AI and music together for the next generation of creators.*
