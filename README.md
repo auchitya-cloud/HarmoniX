@@ -35,7 +35,7 @@ A beautiful, modern music AI platform that combines artificial intelligence with
 
 ## 🚀 Live Demo
 
-**[Visit HarmoniX Live](https://your-username.github.io/HarmoniX)**
+**[Visit HarmoniX Live](https://harmonix-delta.vercel.app/)**
 
 ## 🛠️ Tech Stack
 
