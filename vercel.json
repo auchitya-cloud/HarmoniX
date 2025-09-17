@@ -1,6 +1,10 @@
 {
     "version": 2,
     "name": "harmonix-music-ai",
+    "buildCommand": "npm run build",
+    "outputDirectory": "build",
+    "installCommand": "npm install",
+    "framework": "create-react-app",
     "builds": [{
             "src": "package.json",
             "use": "@vercel/static-build",
@@ -9,17 +13,17 @@
             }
         },
         {
-            "src": "api/generate.py",
+            "src": "api/music-generate.py",
             "use": "@vercel/python"
         }
     ],
     "routes": [{
             "src": "/api/generate",
-            "dest": "/api/generate.py"
+            "dest": "/api/music-generate.py"
         },
         {
             "src": "/api/(.*)",
-            "dest": "/api/generate.py"
+            "dest": "/api/music-generate.py"
         },
         {
             "src": "/(.*)",

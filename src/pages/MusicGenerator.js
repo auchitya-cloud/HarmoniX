@@ -54,7 +54,9 @@ export default function MusicGenerator() {
         user,
         isAuthenticated
     } = useAuth();
-    const ML_API_URL = process.env.REACT_APP_ML_API_URL || 'http://localhost:8000';
+    const ML_API_URL = process.env.NODE_ENV === 'production' ?
+        '/api' :
+        process.env.REACT_APP_ML_API_URL || 'http://localhost:8000';
     const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001/api';
 
     useEffect(() => {
@@ -184,250 +186,250 @@ export default function MusicGenerator() {
     };
 
     return ( <
-        Box sx = {
-            {
-                minHeight: '100vh',
-                background: 'linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%)',
-                py: 4
+            Box sx = {
+                {
+                    minHeight: '100vh',
+                    background: 'linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%)',
+                    py: 4
+                }
+            } >
+            <
+            Container maxWidth = "md" >
+            <
+            Box sx = {
+                {
+                    textAlign: 'center',
+                    mb: 6
+                }
+            } >
+            <
+            Avatar sx = {
+                {
+                    width: 80,
+                    height: 80,
+                    margin: '0 auto 24px',
+                    background: 'linear-gradient(45deg, #ff6b6b 30%, #4ecdc4 90%)',
+                    boxShadow: '0 12px 40px rgba(255, 107, 107, 0.3)',
+                }
+            } >
+            <
+            AutoAwesome sx = {
+                {
+                    fontSize: 40
+                }
             }
-        } >
-        <
-        Container maxWidth = "md" >
-        <
-        Box sx = {
-            {
-                textAlign: 'center',
-                mb: 6
-            }
-        } >
-        <
-        Avatar sx = {
-            {
-                width: 80,
-                height: 80,
-                margin: '0 auto 24px',
-                background: 'linear-gradient(45deg, #ff6b6b 30%, #4ecdc4 90%)',
-                boxShadow: '0 12px 40px rgba(255, 107, 107, 0.3)',
-            }
-        } >
-        <
-        AutoAwesome sx = {
-            {
-                fontSize: 40
-            }
-        }
-        /> <
-        /Avatar>
+            /> < /
+            Avatar >
 
-        <
-        Typography variant = "h3"
-        gutterBottom sx = {
-            {
-                fontWeight: 800,
-                background: 'linear-gradient(45deg, #ff6b6b 30%, #4ecdc4 90%)',
-                backgroundClip: 'text',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-            }
-        } >
-        AI Music Generator <
-        /Typography> <
-        Typography variant = "h6"
-        color = "text.secondary" >
-        Transform your ideas into beautiful music with AI <
-        /Typography> <
-        /Box>
+            <
+            Typography variant = "h3"
+            gutterBottom sx = {
+                {
+                    fontWeight: 800,
+                    background: 'linear-gradient(45deg, #ff6b6b 30%, #4ecdc4 90%)',
+                    backgroundClip: 'text',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                }
+            } >
+            AI Music Generator <
+            /Typography> <
+            Typography variant = "h6"
+            color = "text.secondary" >
+            Transform your ideas into beautiful music with AI <
+            /Typography> < /
+            Box >
 
-        <
-        Paper elevation = {
-            0
-        }
-        sx = {
-            {
-                p: 4,
-                mb: 4,
-                background: 'rgba(255, 255, 255, 0.08)',
-                backdropFilter: 'blur(20px)',
-                border: '1px solid rgba(255, 255, 255, 0.12)',
-                borderRadius: '24px',
+            <
+            Paper elevation = {
+                0
             }
-        } >
-        <
-        TextField fullWidth multiline rows = {
-            4
-        }
-        label = "Describe the music you want to generate"
-        placeholder = "e.g., upbeat electronic dance music with synthesizers and drums, or peaceful acoustic guitar melody"
-        value = {
-            prompt
-        }
-        onChange = {
-            (e) => setPrompt(e.target.value)
-        }
-        margin = "normal"
-        sx = {
-            {
-                '& .MuiOutlinedInput-root': {
+            sx = {
+                {
+                    p: 4,
+                    mb: 4,
+                    background: 'rgba(255, 255, 255, 0.08)',
+                    backdropFilter: 'blur(20px)',
+                    border: '1px solid rgba(255, 255, 255, 0.12)',
+                    borderRadius: '24px',
+                }
+            } >
+            <
+            TextField fullWidth multiline rows = {
+                4
+            }
+            label = "Describe the music you want to generate"
+            placeholder = "e.g., upbeat electronic dance music with synthesizers and drums, or peaceful acoustic guitar melody"
+            value = {
+                prompt
+            }
+            onChange = {
+                (e) => setPrompt(e.target.value)
+            }
+            margin = "normal"
+            sx = {
+                {
+                    '& .MuiOutlinedInput-root': {
+                        borderRadius: '16px',
+                        background: 'rgba(255, 255, 255, 0.05)',
+                        '& fieldset': {
+                            borderColor: 'rgba(255, 255, 255, 0.2)',
+                        },
+                        '&:hover fieldset': {
+                            borderColor: 'rgba(255, 255, 255, 0.3)',
+                        },
+                        '&.Mui-focused fieldset': {
+                            borderColor: '#ff6b6b',
+                        },
+                    },
+                }
+            }
+            />
+
+            <
+            Box sx = {
+                {
+                    mt: 4,
+                    mb: 3
+                }
+            } >
+            <
+            Typography gutterBottom sx = {
+                {
+                    fontWeight: 600
+                }
+            } >
+            Duration: {
+                duration
+            }
+            seconds <
+            /Typography> <
+            Slider value = {
+                duration
+            }
+            onChange = {
+                (e, value) => setDuration(value)
+            }
+            min = {
+                5
+            }
+            max = {
+                30
+            }
+            step = {
+                1
+            }
+            marks valueLabelDisplay = "auto"
+            sx = {
+                {
+                    color: '#ff6b6b',
+                    '& .MuiSlider-thumb': {
+                        background: 'linear-gradient(45deg, #ff6b6b 30%, #4ecdc4 90%)',
+                        boxShadow: '0 4px 20px rgba(255, 107, 107, 0.3)',
+                    },
+                    '& .MuiSlider-track': {
+                        background: 'linear-gradient(45deg, #ff6b6b 30%, #4ecdc4 90%)',
+                    },
+                }
+            }
+            /> <
+            Typography variant = "caption"
+            color = "text.secondary" >
+            Note: Longer durations will take more time to generate(2 - 3 minutes per 10 seconds) <
+            /Typography> < /
+            Box >
+
+            <
+            Box sx = {
+                {
+                    mt: 4,
+                    mb: 3
+                }
+            } >
+            <
+            Typography gutterBottom sx = {
+                {
+                    fontWeight: 600
+                }
+            } >
+            Creativity: {
+                temperature
+            } <
+            /Typography> <
+            Slider value = {
+                temperature
+            }
+            onChange = {
+                (e, value) => setTemperature(value)
+            }
+            min = {
+                0.1
+            }
+            max = {
+                2.0
+            }
+            step = {
+                0.1
+            }
+            marks valueLabelDisplay = "auto"
+            sx = {
+                {
+                    color: '#4ecdc4',
+                    '& .MuiSlider-thumb': {
+                        background: 'linear-gradient(45deg, #4ecdc4 30%, #44a08d 90%)',
+                        boxShadow: '0 4px 20px rgba(78, 205, 196, 0.3)',
+                    },
+                    '& .MuiSlider-track': {
+                        background: 'linear-gradient(45deg, #4ecdc4 30%, #44a08d 90%)',
+                    },
+                }
+            }
+            /> <
+            Typography variant = "caption"
+            color = "text.secondary" >
+            Higher values = more creative / random, Lower values = more predictable <
+            /Typography> < /
+            Box >
+
+            <
+            FormControl fullWidth sx = {
+                {
+                    mt: 3,
+                    mb: 4
+                }
+            } >
+            <
+            InputLabel sx = {
+                {
+                    color: 'rgba(255, 255, 255, 0.7)'
+                }
+            } >
+            LoRA Model(Optional) <
+            /InputLabel> <
+            Select value = {
+                loraModel
+            }
+            onChange = {
+                (e) => setLoraModel(e.target.value)
+            }
+            label = "LoRA Model (Optional)"
+            sx = {
+                {
                     borderRadius: '16px',
                     background: 'rgba(255, 255, 255, 0.05)',
-                    '& fieldset': {
+                    '& .MuiOutlinedInput-notchedOutline': {
                         borderColor: 'rgba(255, 255, 255, 0.2)',
                     },
-                    '&:hover fieldset': {
+                    '&:hover .MuiOutlinedInput-notchedOutline': {
                         borderColor: 'rgba(255, 255, 255, 0.3)',
                     },
-                    '&.Mui-focused fieldset': {
-                        borderColor: '#ff6b6b',
+                    '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                        borderColor: '#4ecdc4',
                     },
-                },
-            }
-        }
-        />
-
-        <
-        Box sx = {
-            {
-                mt: 4,
-                mb: 3
-            }
-        } >
-        <
-        Typography gutterBottom sx = {
-            {
-                fontWeight: 600
-            }
-        } >
-        Duration: {
-            duration
-        }
-        seconds <
-        /Typography> <
-        Slider value = {
-            duration
-        }
-        onChange = {
-            (e, value) => setDuration(value)
-        }
-        min = {
-            5
-        }
-        max = {
-            30
-        }
-        step = {
-            1
-        }
-        marks valueLabelDisplay = "auto"
-        sx = {
-            {
-                color: '#ff6b6b',
-                '& .MuiSlider-thumb': {
-                    background: 'linear-gradient(45deg, #ff6b6b 30%, #4ecdc4 90%)',
-                    boxShadow: '0 4px 20px rgba(255, 107, 107, 0.3)',
-                },
-                '& .MuiSlider-track': {
-                    background: 'linear-gradient(45deg, #ff6b6b 30%, #4ecdc4 90%)',
-                },
-            }
-        }
-        /> <
-        Typography variant = "caption"
-        color = "text.secondary" >
-        Note: Longer durations will take more time to generate(2 - 3 minutes per 10 seconds) <
-        /Typography> <
-        /Box>
-
-        <
-        Box sx = {
-            {
-                mt: 4,
-                mb: 3
-            }
-        } >
-        <
-        Typography gutterBottom sx = {
-            {
-                fontWeight: 600
-            }
-        } >
-        Creativity: {
-            temperature
-        } <
-        /Typography> <
-        Slider value = {
-            temperature
-        }
-        onChange = {
-            (e, value) => setTemperature(value)
-        }
-        min = {
-            0.1
-        }
-        max = {
-            2.0
-        }
-        step = {
-            0.1
-        }
-        marks valueLabelDisplay = "auto"
-        sx = {
-            {
-                color: '#4ecdc4',
-                '& .MuiSlider-thumb': {
-                    background: 'linear-gradient(45deg, #4ecdc4 30%, #44a08d 90%)',
-                    boxShadow: '0 4px 20px rgba(78, 205, 196, 0.3)',
-                },
-                '& .MuiSlider-track': {
-                    background: 'linear-gradient(45deg, #4ecdc4 30%, #44a08d 90%)',
-                },
-            }
-        }
-        /> <
-        Typography variant = "caption"
-        color = "text.secondary" >
-        Higher values = more creative / random, Lower values = more predictable <
-        /Typography> <
-        /Box>
-
-        <
-        FormControl fullWidth sx = {
-            {
-                mt: 3,
-                mb: 4
-            }
-        } >
-        <
-        InputLabel sx = {
-            {
-                color: 'rgba(255, 255, 255, 0.7)'
-            }
-        } >
-        LoRA Model(Optional) <
-        /InputLabel> <
-        Select value = {
-            loraModel
-        }
-        onChange = {
-            (e) => setLoraModel(e.target.value)
-        }
-        label = "LoRA Model (Optional)"
-        sx = {
-            {
-                borderRadius: '16px',
-                background: 'rgba(255, 255, 255, 0.05)',
-                '& .MuiOutlinedInput-notchedOutline': {
-                    borderColor: 'rgba(255, 255, 255, 0.2)',
-                },
-                '&:hover .MuiOutlinedInput-notchedOutline': {
-                    borderColor: 'rgba(255, 255, 255, 0.3)',
-                },
-                '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                    borderColor: '#4ecdc4',
-                },
-            }
-        } >
-        <
-        MenuItem value = "" > None(Base Model) < /MenuItem> {
+                }
+            } >
+            <
+            MenuItem value = "" > None(Base Model) < /MenuItem> {
             availableModels.map((model) => ( <
                 MenuItem key = {
                     model
@@ -440,8 +442,8 @@ export default function MusicGenerator() {
                 /MenuItem>
             ))
         } <
-        /Select> <
-        /FormControl>
+        /Select> < /
+        FormControl >
 
         {
             error && ( <
@@ -453,120 +455,114 @@ export default function MusicGenerator() {
                         background: 'rgba(244, 67, 54, 0.1)',
                         border: '1px solid rgba(244, 67, 54, 0.3)',
                     }
-                } >
-                {
+                } > {
                     error
                 } <
                 /Alert>
             )
         }
 
-        {
-            generating && ( <
-                Box sx = {
-                    {
-                        mb: 3
-                    }
-                } >
-                <
-                Box sx = {
-                    {
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: 2,
-                        mb: 2,
-                        p: 3,
-                        background: 'rgba(255, 255, 255, 0.05)',
-                        borderRadius: '16px',
-                        border: '1px solid rgba(255, 255, 255, 0.1)',
-                    }
-                } >
-                <
-                CircularProgress size = {
-                    24
+    {
+        generating && ( <
+            Box sx = {
+                {
+                    mb: 3
                 }
-                sx = {
-                    {
-                        color: '#ff6b6b'
-                    }
+            } >
+            <
+            Box sx = {
+                {
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 2,
+                    mb: 2,
+                    p: 3,
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    borderRadius: '16px',
+                    border: '1px solid rgba(255, 255, 255, 0.1)',
                 }
-                /> <
-                Box sx = {
-                    {
-                        flex: 1
-                    }
-                } >
-                <
-                Typography variant = "body1"
-                sx = {
-                    {
-                        fontWeight: 600
-                    }
-                } >
-                Generating your music...({
-                    Math.round(progress)
-                } % ) <
-                /Typography> <
-                Typography variant = "caption"
-                color = "text.secondary" >
-                This typically takes 2 - 3 minutes.Please be patient
-                while AI creates your masterpiece. <
-                /Typography> <
-                /Box> <
-                /Box> <
-                LinearProgress variant = "determinate"
-                value = {
-                    progress
+            } >
+            <
+            CircularProgress size = {
+                24
+            }
+            sx = {
+                {
+                    color: '#ff6b6b'
                 }
-                sx = {
-                    {
-                        height: 8,
+            }
+            /> <
+            Box sx = {
+                {
+                    flex: 1
+                }
+            } >
+            <
+            Typography variant = "body1"
+            sx = {
+                {
+                    fontWeight: 600
+                }
+            } >
+            Generating your music...({
+                Math.round(progress)
+            } % ) <
+            /Typography> <
+            Typography variant = "caption"
+            color = "text.secondary" >
+            This typically takes 2 - 3 minutes.Please be patient
+            while AI creates your masterpiece. <
+            /Typography> < /
+            Box > <
+            /Box> <
+            LinearProgress variant = "determinate"
+            value = {
+                progress
+            }
+            sx = {
+                {
+                    height: 8,
+                    borderRadius: 4,
+                    background: 'rgba(255, 255, 255, 0.1)',
+                    '& .MuiLinearProgress-bar': {
+                        background: 'linear-gradient(45deg, #ff6b6b 30%, #4ecdc4 90%)',
                         borderRadius: 4,
-                        background: 'rgba(255, 255, 255, 0.1)',
-                        '& .MuiLinearProgress-bar': {
-                            background: 'linear-gradient(45deg, #ff6b6b 30%, #4ecdc4 90%)',
-                            borderRadius: 4,
-                        },
-                    }
+                    },
                 }
-                /> <
-                /Box>
-            )
-        }
+            }
+            /> < /
+            Box >
+        )
+    }
 
-        <
-        Button variant = "contained"
-        size = "large"
-        onClick = {
-            generateMusic
-        }
-        disabled = {
-            generating
-        }
-        fullWidth sx = {
+    <
+    Button variant = "contained"
+    size = "large"
+    onClick = {
+        generateMusic
+    }
+    disabled = {
+        generating
+    }
+    fullWidth sx = {
             {
                 py: 2,
                 fontSize: '1.1rem',
                 fontWeight: 600,
                 borderRadius: '16px',
                 background: generating ?
-                    'rgba(255, 255, 255, 0.1)' :
-                    'linear-gradient(45deg, #ff6b6b 30%, #4ecdc4 90%)',
+                    'rgba(255, 255, 255, 0.1)' : 'linear-gradient(45deg, #ff6b6b 30%, #4ecdc4 90%)',
                 boxShadow: generating ?
-                    'none' :
-                    '0 8px 32px rgba(255, 107, 107, 0.3)',
+                    'none' : '0 8px 32px rgba(255, 107, 107, 0.3)',
                 '&:hover': {
                     background: generating ?
-                        'rgba(255, 255, 255, 0.1)' :
-                        'linear-gradient(45deg, #ff8a80 30%, #80cbc4 90%)',
+                        'rgba(255, 255, 255, 0.1)' : 'linear-gradient(45deg, #ff8a80 30%, #80cbc4 90%)',
                     boxShadow: generating ?
-                        'none' :
-                        '0 12px 40px rgba(255, 107, 107, 0.4)',
+                        'none' : '0 12px 40px rgba(255, 107, 107, 0.4)',
                     transform: generating ? 'none' : 'translateY(-2px)',
                 },
             }
-        } >
-        {
+        } > {
             generating ? ( <
                 >
                 <
@@ -597,8 +593,8 @@ export default function MusicGenerator() {
                 />
             )
         } <
-        /Button> <
-        /Paper>
+        /Button> < /
+        Paper >
 
         {
             generatedAudio && ( <
@@ -654,8 +650,8 @@ export default function MusicGenerator() {
                 Typography variant = "body2"
                 color = "text.secondary" >
                 "{generatedAudio.prompt}" <
-                /Typography> <
-                /Box> <
+                /Typography> < /
+                Box > <
                 /Box>
 
                 {
@@ -699,8 +695,7 @@ export default function MusicGenerator() {
                             transform: 'translateY(-2px)',
                         },
                     }
-                } >
-                {
+                } > {
                     playing ? < Pause / > : < PlayArrow / >
                 } <
                 /IconButton>
@@ -745,12 +740,12 @@ export default function MusicGenerator() {
                         /IconButton>
                     )
                 } <
-                /Box> <
-                /CardContent> <
+                /Box> < /
+                CardContent > <
                 /Card>
             )
         } <
-        /Container> <
-        /Box>
-    );
+        /Container> < /
+        Box >
+);
 }
