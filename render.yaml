@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: harmonix-ml-api
+    env: python
+    buildCommand: "cd ml-api && pip install -r requirements_minimal.txt"
+    startCommand: "cd ml-api && python lightweight_main.py"
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: PYTHONPATH
+        value: /opt/render/project/src/ml-api

@@ -54,7 +54,15 @@ export default function MusicGenerator() {
         user,
         isAuthenticated
     } = useAuth();
-    const ML_API_URL = process.env.REACT_APP_ML_API_URL || 'http://localhost:8000';
+    // Try multiple API endpoints in order of preference
+    const API_ENDPOINTS = [
+        process.env.REACT_APP_ML_API_URL, // Custom environment variable
+        'https://harmonix-ml-api.railway.app', // Railway deployment
+        'https://harmonix-ml-api.onrender.com', // Render deployment
+        'http://localhost:8000' // Local development
+    ].filter(Boolean);
+
+    const [ML_API_URL, setML_API_URL] = useState(API_ENDPOINTS[0] || 'http://localhost:8000');
     const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001/api';
 
     useEffect(() => {
