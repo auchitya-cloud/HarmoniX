@@ -54,9 +54,7 @@ export default function MusicGenerator() {
         user,
         isAuthenticated
     } = useAuth();
-    const ML_API_URL = process.env.NODE_ENV === 'production' ?
-        '/api' :
-        process.env.REACT_APP_ML_API_URL || 'http://localhost:8000';
+    const ML_API_URL = process.env.REACT_APP_ML_API_URL || 'http://localhost:8000';
     const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001/api';
 
     useEffect(() => {
@@ -443,7 +441,7 @@ export default function MusicGenerator() {
             ))
         } <
         /Select> < /
-        FormControl >
+    FormControl >
 
         {
             error && ( <
@@ -594,7 +592,7 @@ export default function MusicGenerator() {
             )
         } <
         /Button> < /
-        Paper >
+    Paper >
 
         {
             generatedAudio && ( <
@@ -746,6 +744,6 @@ export default function MusicGenerator() {
             )
         } <
         /Container> < /
-        Box >
+    Box >
 );
 }

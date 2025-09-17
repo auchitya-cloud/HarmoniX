@@ -1,1 +1,1 @@
-numpy==1.24.3
+# No external dependencies - using only Python standard library

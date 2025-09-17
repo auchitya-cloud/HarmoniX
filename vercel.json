@@ -4,30 +4,5 @@
     "buildCommand": "npm run build",
     "outputDirectory": "build",
     "installCommand": "npm install",
-    "framework": "create-react-app",
-    "builds": [{
-            "src": "package.json",
-            "use": "@vercel/static-build",
-            "config": {
-                "distDir": "build"
-            }
-        },
-        {
-            "src": "api/music-generate.py",
-            "use": "@vercel/python"
-        }
-    ],
-    "routes": [{
-            "src": "/api/generate",
-            "dest": "/api/music-generate.py"
-        },
-        {
-            "src": "/api/(.*)",
-            "dest": "/api/music-generate.py"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/index.html"
-        }
-    ]
+    "framework": "create-react-app"
 }
